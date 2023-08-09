@@ -1,7 +1,12 @@
 body {
   background-color: #0798ac;
-  display: grid;
 }
+
+h1 {
+  color: aliceblue;
+  margin: auto;
+}
+
 #main-container {
   margin: auto;
   width: 80%;
