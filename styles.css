@@ -4,7 +4,10 @@ body {
 
 h1 {
   color: aliceblue;
+  text-align: center;
+  width: 50%;
   margin: auto;
+  padding: 1rem 0;
 }
 
 #main-container {
