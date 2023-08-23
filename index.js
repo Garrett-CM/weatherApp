@@ -38,10 +38,10 @@ fetch('http://api.weatherapi.com/v1/forecast.json?key=4a2e77ab11604a74b547013723
 
         htmlLocation.innerText = (`${locationData.name} state of ${locationData.region}`);
         htmlCurrent.innerText = (`Current Temp is ${currentData.temp_f}`);
-        htmlHigh.innerText = (`${forecastData.forecastday[0].day.maxtemp_f}`);
-        htmlLow.innerText = (`${forecastData.forecastday[0].day.mintemp_f}`);
-        htmlAvg.innerText = (`${forecastData.forecastday[0].day.avgtemp_f}`);
-        htmlWind.innerText = (`${forecastData.forecastday[0].day.maxwind_mph}`);
+        htmlHigh.innerText = (`The high is: ${forecastData.forecastday[0].day.maxtemp_f}f`);
+        htmlLow.innerText = (`The low is: ${forecastData.forecastday[0].day.mintemp_f}f`);
+        htmlAvg.innerText = (`The average is: ${forecastData.forecastday[0].day.avgtemp_f}f`);
+        htmlWind.innerText = (`Wind speed: ${forecastData.forecastday[0].day.maxwind_mph}mph`);
     })//catch error obj and alert
     .catch(function (error){
         console.log('Oh snap there is an issue');
