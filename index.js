@@ -31,7 +31,7 @@ const htmlWind = document.getElementById('wind');
 let loc;
 let cur;
 //fetch data and update varaibles
-// fetch('http://api.weatherapi.com/v1/forecast.json?key=4a2e77ab11604a74b5470137231308&q=Austin&days=1&aqi=no&alerts=no')
+fetch('http://api.weatherapi.com/v1/forecast.json?key=4a2e77ab11604a74b5470137231308&q=Austin&days=1&aqi=no&alerts=no')
     .then(function (responce){
         return responce.json();
     })
