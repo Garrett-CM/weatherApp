@@ -12,7 +12,14 @@
 //                         };
 
 
-//html var
+// TODO:
+// Clean up code
+// refactor to async await
+// ability to add your location and submit, 
+// -starting with adding button for starting
+// add animation, sun up-sun down w/ icons
+
+//html variables
 const htmlLocation = document.getElementById('current-condition');
 const htmlCurrent = document.getElementById('current-temp');
 const htmlHigh = document.getElementById('temp-high');
@@ -24,7 +31,7 @@ const htmlWind = document.getElementById('wind');
 let loc;
 let cur;
 //fetch data and update varaibles
-fetch('http://api.weatherapi.com/v1/forecast.json?key=4a2e77ab11604a74b5470137231308&q=Austin&days=1&aqi=no&alerts=no')
+// fetch('http://api.weatherapi.com/v1/forecast.json?key=4a2e77ab11604a74b5470137231308&q=Austin&days=1&aqi=no&alerts=no')
     .then(function (responce){
         return responce.json();
     })
